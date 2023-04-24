@@ -7,16 +7,16 @@
     <title>Index</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="corpo">
     <header>Vinhacity</header>
     <br>
     <br>
     <div>
-        <nav>
-            <a href="index.html" class="navColor">Index</a>
+        <nav class="navegação">
+            <a href="index.html" class="navColor" onclick="irAoIndex()">Index</a>
             <a href="Sobre.html" class="navColor">Sobre</a>
-            <a href="Contato.html" class="navColor">Contato</a>
-            <a href="quiz.html" class="navColor">Quiz</a>
+            <a href="contato.html" class="navColor">Contato</a>
+            <a href="quiz.html" class="navColor" onclick="irAoQuiz()">Quiz</a>
         </nav>
         <br>
         <br>
@@ -25,6 +25,11 @@
             <img src="imagens/vinho.jpg" alt="Imagine uma foto de vinho">
         </div>
     </div>
-    <script src="index.js"></script>
+    <br>
+    <br>
+    <div class="slogan">
+        <h3>Qualidade que dá gosto</h3></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
