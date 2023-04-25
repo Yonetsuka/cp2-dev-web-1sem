@@ -1,3 +1,25 @@
+//função para mudar de cor
+let cor = 0
+let corpo = document.querySelector(body)
+function trocarDeCor()
+{
+    if(cor == 0)
+    {
+        corpo.style.backgroundColor = 'green';
+        cor++;
+    }
+    if(cor == 1)
+    {
+        corpo.style.backgroundColor = 'red';
+        cor++;
+    }
+    if(cor == 2)
+    {
+        corpo.style.backgroundColor = 'white';
+        cor++;
+    }
+}
+
 //colocando alert ao ir para o index
 function irAoIndex()
 {
@@ -11,21 +33,20 @@ function irAoQuiz()
 }
 
 //fazendo o quiz
-let acertos = 0;
 function quiz()
 {
     //pergunta1
-
+    let acertos = 0;
     resposta1 = prompt("Primeira pergunta: Vinho branco é feito de uvas brancas ?(sim/não)")
-    if(resposta1 == "sim")
+    if(resposta1 == "não")
     {
-        alert("Você acertou")
-        acertos++
-
+        alert("Você acertou");
+        acertos+= 1;
     }
-    else if(resposta1 == "não")
+    else if(resposta1 == "sim")
     {
         alert("Você errou")
+        alert("O vinho branco pode ser feito com uvas tintas também. A cor da fruta está presente na casca, então, para produzir o vinho branco com uvas tintas é só não deixar a bebida em contato com a casca. Isso surgiu nos primórdios do champagne, já que a produção da bebida na região francesa levava chardonnay, que é uma uva branco, e pinot noir, uma uva tinta.")
     }
     else
     {
@@ -34,11 +55,11 @@ function quiz()
 
     //pergunta2
 
-    resposta1 = prompt("Segunda pergunta: Vinho branco é feito de uvas brancas ?(sim/não)")
+    resposta1 = prompt("Segunda pergunta: Solo de pior qualidade produz vinhos melhores?(sim/não)")
     if(resposta1 == "sim")
     {
-        alert("Você acertou")
-        acertos++
+        alert("Você acertou");
+        acertos += 1;
 
     }
     else if(resposta1 == "não")
@@ -56,8 +77,8 @@ function quiz()
     resposta1 = prompt("Terceira pergunta:Vinho tinto é ideal para o inverno e branco para o verão(sim/não)")
     if(resposta1 == "não")
     {
-        alert("Você acertou")
-        acertos++
+        alert("Você acertou");
+        acertos += 1;
 
     }
     else if(resposta1 == "sim")
@@ -76,7 +97,7 @@ function quiz()
     if(resposta1 == "deitado")
     {
         alert("Você acertou")
-        acertos++
+        acertos += 1
 
     }
     else if(resposta1 == "em pé")
@@ -95,7 +116,7 @@ function quiz()
     if(resposta1 == "não")
     {
         alert("Você acertou")
-        acertos++
+        acertos += 1
 
     }
     else if(resposta1 == "sim")
@@ -114,7 +135,7 @@ function quiz()
     if(resposta1 == "não")
     {
         alert("Você acertou")
-        acertos++
+        acertos += 1
 
     }
     else if(resposta1 == "sim")
@@ -133,7 +154,7 @@ function quiz()
     if(resposta1 == "sim")
     {
         alert("Você acertou")
-        acertos++
+        acertos += 1
 
     }
     else if(resposta1 == "não")
@@ -152,7 +173,7 @@ function quiz()
     if(resposta1 == "sim")
     {
         alert("Você acertou")
-        acertos++
+        acertos += 1
 
     }
     else if(resposta1 == "não")
@@ -171,7 +192,7 @@ function quiz()
     if(resposta1 == "não")
     {
         alert("Você acertou")
-        acertos++
+        acertos += 1
 
     }
     else if(resposta1 == "sim")
@@ -190,7 +211,7 @@ function quiz()
     if(resposta1 == "não")
     {
         alert("Você acertou")
-        acertos++
+        acertos += 1
 
     }
     else if(resposta1 == "sim")
